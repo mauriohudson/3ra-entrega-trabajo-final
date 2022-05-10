@@ -605,7 +605,7 @@ header .navbar {
     height: 50vh;
   }
 
-  .home .carousel-inner .carousel-item h2 {
+  .home .carousel-inner .carousel-item .container__text h1 {
     font-size: 50px;
   }
 
@@ -619,6 +619,11 @@ header .navbar {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, 1fr);
     grid-template-areas: "picture-1" "picture-2" "picture-3" "picture-4" "picture-5" "picture-6" "picture-7" "picture-8" "picture-9";
+  }
+
+  .boton {
+    height: 200px;
+    width: 200px;
   }
 
   .circle {
