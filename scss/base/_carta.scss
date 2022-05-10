@@ -1,0 +1,73 @@
+.title__carta{
+    color: $secundary-color;
+}
+
+.ham {
+    color: $secundary-color;
+}
+
+.ham1 {
+    color: rgb(176, 175, 175);
+}
+
+.price {
+    color: rgb(255, 255, 255);
+}
+
+.tituloMenu {
+    border: solid 5px $secundary-color;
+    color: $secundary-color;
+}
+
+.contenedorHamburguesa {
+    border-bottom: solid 2px $secundary-color;
+
+}
+
+.botonCarta {
+    width: 270px;
+    font-size: 40px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: $secundary-color;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1;
+   }
+   
+   .botonCarta::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: $secundary-color;
+    z-index: -1;
+    transition: all 0.5s;
+   }
+   
+   .botonCarta:hover::before {
+     width: 100%;
+   }
+   
+   .botonCarta:hover {
+    color: black;
+   }
+   
+   .botonCarta:active:before {
+    background: #b9b9b9;
+   }
+
+   .sacarDecoracion {
+       color: $secundary-color;
+       text-decoration: none;
+   }
+
+   .sacarDecoracion:hover {
+       color: black;
+   }

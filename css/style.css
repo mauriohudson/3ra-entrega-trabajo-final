@@ -1,0 +1,629 @@
+.centrar, .row, .home .carousel-inner .carousel-item .container__text, .home .texto-central {
+  align-items: center;
+  text-align: center;
+}
+
+.background, .picture-9, .picture-8, .picture-7, .picture-6, .picture-5, .picture-4, .picture-3, .picture-2, .picture-1 {
+  background-size: cover;
+  background-position: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+header {
+  opacity: 0.7;
+}
+
+header {
+  font-family: "Old Standard TT", serif;
+}
+header .navitem {
+  font-family: "Old Standard TT", serif;
+}
+header .navbar {
+  background-color: burlywood;
+  padding: 0;
+  margin: 0;
+}
+
+.def1 {
+  background-image: url(../img/def11.png);
+  background-size: cover;
+}
+
+.def2 {
+  background-image: url(../img/def22.png);
+  background-size: cover;
+}
+
+.def3 {
+  background-image: url(../img/def33.png);
+  background-size: cover;
+}
+
+.home .carousel-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  z-index: 10;
+  transform: translateX(-50%);
+}
+.home .carousel-indicators {
+  position: relative;
+  margin: 0;
+}
+.home .carouselExampleIndicators {
+  height: 70px;
+  width: 70px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  border: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+.home .carousel-control-next,
+.home .carousel-control-prev {
+  height: 60px;
+  width: 60px;
+  opacity: 1;
+  z-index: 3;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.home .carousel-control-next:hover,
+.home .carousel-control-prev:hover {
+  box-shadow: 0 0 10px #ffffff;
+}
+.home .carousel-control-next img,
+.home .carousel-control-prev img {
+  width: 40px;
+}
+.home .carousel-control-next {
+  right: -90px;
+}
+.home .carousel-control-prev {
+  left: -90px;
+}
+.home .active {
+  border-color: #fff;
+  transform: scale(1.2);
+}
+.home .carousel-inner .carousel-item {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+.home .carousel-inner .carousel-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: -1;
+}
+.home .carousel-inner .carousel-item h1 {
+  font-family: "Old Standard TT", serif;
+  font-size: 100px;
+  color: #fff;
+  margin: 0 0 10px;
+  opacity: 0;
+}
+.home .carousel-inner .carousel-item p {
+  font-family: "Old Standard TT", serif;
+  font-size: 40px;
+  margin: 0;
+  color: #eeeeee;
+  opacity: 0;
+}
+.home .carousel-inner .carousel-item.active h1 {
+  animation: desvanecerseIzquierda 1s ease forwards;
+}
+.home .carousel-inner .carousel-item.active p {
+  animation: desvanecerseDerecha 1s ease forwards;
+}
+@keyframes desvanecerseIzquierda {
+  0% {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes desvanecerseDerecha {
+  0% {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.home .carousel-inner .carousel-item .container__text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section {
+  display: flex;
+  text-align: start;
+  justify-content: start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 400px;
+}
+
+.section1 {
+  height: 100vh;
+}
+
+.title {
+  font-family: "Old Standard TT", serif;
+  margin-left: 20px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.title::after {
+  content: "";
+  position: relative;
+  height: 3px;
+  width: 70px;
+  margin-left: 4px;
+  left: 0;
+  top: 0.05em;
+  background: #fff;
+  display: block;
+}
+
+.p1 {
+  margin-left: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.section .title p {
+  animation: desvanecerseIzquierda 1s ease forwards;
+}
+
+.section p {
+  animation: desvanecerseDerecha 1s ease forwards;
+}
+
+@keyframes desvanecerseIzquierda {
+  0% {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes desvanecerseDerecha {
+  0% {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.main__menu {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.col2 {
+  justify-content: space-between;
+}
+
+.boton {
+  font-family: "Old Standard TT", serif;
+  height: 300px;
+  width: 300px;
+  background-color: black;
+  opacity: 0.7;
+}
+
+.boton1 {
+  font-family: "Old Standard TT", serif;
+  border: 10px yellow;
+}
+
+.carta {
+  color: #fff;
+}
+
+.carta1 {
+  background-color: yellow;
+  color: black;
+}
+
+.title__carta {
+  color: #fff;
+}
+
+.ham {
+  color: #fff;
+}
+
+.ham1 {
+  color: rgb(176, 175, 175);
+}
+
+.price {
+  color: rgb(255, 255, 255);
+}
+
+.tituloMenu {
+  border: solid 5px #fff;
+  color: #fff;
+}
+
+.contenedorHamburguesa {
+  border-bottom: solid 2px #fff;
+}
+
+.botonCarta {
+  width: 270px;
+  font-size: 40px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  position: relative;
+  transition: all 0.5s;
+  z-index: 1;
+}
+
+.botonCarta::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #fff;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.botonCarta:hover::before {
+  width: 100%;
+}
+
+.botonCarta:hover {
+  color: black;
+}
+
+.botonCarta:active:before {
+  background: #b9b9b9;
+}
+
+.sacarDecoracion {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sacarDecoracion:hover {
+  color: black;
+}
+
+.formulario__container {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-family: "Old Standard TT", serif;
+}
+
+.px-1 {
+  background-color: rgb(255, 242, 0);
+  color: black;
+}
+
+.form-control {
+  border-block: none;
+}
+
+.botonContactos {
+  font-family: inherit;
+  font-size: 20px;
+  background: yellow;
+  color: black;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.botonContactos span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.botonContactos svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.botonContactos:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.botonContactos:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.botonContactos:hover span {
+  transform: translateX(5em);
+}
+
+.botonContactos:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+.container__contactos {
+  margin: 10px;
+  padding: 20px;
+  background-image: url(../galeria/beerpong.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 95%;
+}
+
+.circle {
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 30%;
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  animation-name: pong;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+}
+
+@keyframes pong {
+  0% {
+    background-color: #fff;
+    transform: translateY(0);
+  }
+  50% {
+    background-color: rgb(234, 255, 150);
+  }
+  100% {
+    background-color: rgb(183, 255, 0);
+    transform: translateX(250%) translateY(500%);
+  }
+}
+.footer {
+  background-color: burlywood;
+  margin: 0;
+}
+
+.redes {
+  font-family: "Old Standard TT", serif;
+}
+
+.contacto {
+  font-family: "Old Standard TT", serif;
+}
+
+.iconi {
+  color: #fff;
+  font-size: 50px;
+  animation: first_color 0.5s ease-in-out infinite alternate;
+}
+
+.iconf {
+  color: #fff;
+  font-size: 50px;
+  animation: second_color 0.5s ease-in-out infinite alternate;
+}
+
+.iconw {
+  color: #fff;
+  font-size: 50px;
+  animation: third_color 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes first_color {
+  0% {
+    text-shadow: 0 0 10px #ff1177;
+  }
+  100% {
+    text-shadow: 0 0 10px #ff1177;
+  }
+}
+@keyframes second_color {
+  0% {
+    text-shadow: 0 0 10px #1877f2;
+  }
+  100% {
+    text-shadow: 0 0 10px #1877f2;
+  }
+}
+@keyframes third_color {
+  0% {
+    text-shadow: 0 0 10px #25d366;
+  }
+  100% {
+    text-shadow: 0 0 10px #25d366;
+  }
+}
+.grid-picture {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.grid-picture::before {
+  content: "Deker's Bar";
+  font-family: "Old Standard TT", serif;
+  font-size: 1.5rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.48'%3E%3Cpolygon fill='%23220000' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23440000' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23660000' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23880000' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A00' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.7;
+  transform: scale(0);
+  transition: transform 0.4s;
+}
+
+.grid-picture:hover::before {
+  transform: scale(1) rotate(360deg);
+}
+
+.gallery_container {
+  display: grid;
+  padding: 1% 0;
+  max-width: 100%;
+  height: 150vh;
+  width: 100%;
+  gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "picture-1 picture-2 picture-2" "picture-1 picture-3 picture-3" "picture-4 picture-5 picture-5" "picture-8 picture-6 picture-6" "picture-8 picture-7 picture-9";
+}
+
+.picture-1 {
+  grid-area: picture-1;
+  background-image: url(../galeria/1.jpg);
+}
+
+.picture-2 {
+  grid-area: picture-2;
+  background-image: url(../galeria/22.jpg);
+  background-repeat: no-repeat;
+}
+
+.picture-3 {
+  grid-area: picture-3;
+  background-image: url(../galeria/33.jpg);
+  background-repeat: no-repeat;
+}
+
+.picture-4 {
+  grid-area: picture-4;
+  background-image: url(../galeria/pexels-magda-ehlers-1189261.jpg);
+}
+
+.picture-5 {
+  grid-area: picture-5;
+  background-image: url(../galeria/pexels-picography-4784.jpg);
+}
+
+.picture-6 {
+  grid-area: picture-6;
+  background-image: url(../galeria/6.jpg);
+}
+
+.picture-7 {
+  grid-area: picture-7;
+  background-image: url(../galeria/7.jpg);
+}
+
+.picture-8 {
+  grid-area: picture-8;
+  background-image: url(../galeria/8.jpg);
+}
+
+.picture-9 {
+  grid-area: picture-9;
+  background-image: url(../galeria/9.jpg);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .home .carousel-control-next,
+.home .carousel-control-prev {
+    display: none;
+  }
+
+  .home .carouselExampleIndicators {
+    height: 40px;
+    width: 40px;
+  }
+
+  .home .carousel-inner .carousel-item {
+    height: 50vh;
+  }
+
+  .home .carousel-inner .carousel-item h2 {
+    font-size: 50px;
+  }
+
+  .home .carousel-inner .carousel-item p {
+    font-size: 20px;
+  }
+
+  .gallery_container {
+    height: 300vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: "picture-1" "picture-2" "picture-3" "picture-4" "picture-5" "picture-6" "picture-7" "picture-8" "picture-9";
+  }
+
+  .circle {
+    visibility: hidden;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
