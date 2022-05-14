@@ -12,7 +12,7 @@
 @mixin media {
     @media only screen and (min-width: 320px) and (max-width: 768px) {
         .home .carousel-control-next,
-      .home .carousel-control-prev {
+        .home .carousel-control-prev {
           display: none;
         }
       
@@ -41,14 +41,22 @@
           grid-template-areas: "picture-1" "picture-2" "picture-3" "picture-4" "picture-5" "picture-6" "picture-7" "picture-8" "picture-9";
         }
 
+        .contacto {
+          padding-top: 15px;
+        }
+
+        .container__contactos {
+          background-size: contain;
+        }
+
+        .redes {
+          padding-top: 15px;
+        }
+
         .boton {
           height: 200px;
           width: 200px;
         }
-
-        .circle {
-          visibility: hidden;
-      }
       }
 }
 

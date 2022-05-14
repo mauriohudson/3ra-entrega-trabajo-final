@@ -1,13 +1,3 @@
-.centrar, .row, .home .carousel-inner .carousel-item .container__text, .home .texto-central {
-  align-items: center;
-  text-align: center;
-}
-
-.background, .picture-9, .picture-8, .picture-7, .picture-6, .picture-5, .picture-4, .picture-3, .picture-2, .picture-1 {
-  background-size: cover;
-  background-position: center;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +11,20 @@ body {
 
 header {
   opacity: 0.7;
+}
+
+.rowover {
+  --bs-gutter-x: 0;
+}
+
+.centrar, .row, .home .carousel-inner .carousel-item .container__text, .home .texto-central {
+  align-items: center;
+  text-align: center;
+}
+
+.background, .picture-9, .picture-8, .picture-7, .picture-6, .picture-5, .picture-4, .picture-3, .picture-2, .picture-1 {
+  background-size: cover;
+  background-position: center;
 }
 
 header {
@@ -340,9 +344,10 @@ header .navbar {
 
 .formulario__container {
   color: #fff;
+  height: 165vh;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
   font-family: "Old Standard TT", serif;
 }
 
@@ -353,6 +358,8 @@ header .navbar {
 
 .form-control {
   border-block: none;
+  background-color: rgb(41, 40, 40);
+  color: white;
 }
 
 .botonContactos {
@@ -407,43 +414,13 @@ header .navbar {
   }
 }
 .container__contactos {
-  margin: 10px;
-  padding: 20px;
   background-image: url(../galeria/beerpong.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   height: 100%;
-  width: 95%;
+  width: 100%;
 }
 
-.circle {
-  position: absolute;
-  margin-top: 10%;
-  margin-left: 30%;
-  height: 50px;
-  width: 50px;
-  background-color: #fff;
-  border-radius: 50%;
-  animation-name: pong;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease;
-}
-
-@keyframes pong {
-  0% {
-    background-color: #fff;
-    transform: translateY(0);
-  }
-  50% {
-    background-color: rgb(234, 255, 150);
-  }
-  100% {
-    background-color: rgb(183, 255, 0);
-    transform: translateX(250%) translateY(500%);
-  }
-}
 .footer {
   background-color: burlywood;
   margin: 0;
@@ -621,13 +598,21 @@ header .navbar {
     grid-template-areas: "picture-1" "picture-2" "picture-3" "picture-4" "picture-5" "picture-6" "picture-7" "picture-8" "picture-9";
   }
 
+  .contacto {
+    padding-top: 15px;
+  }
+
+  .container__contactos {
+    background-size: contain;
+  }
+
+  .redes {
+    padding-top: 15px;
+  }
+
   .boton {
     height: 200px;
     width: 200px;
-  }
-
-  .circle {
-    visibility: hidden;
   }
 }
 
