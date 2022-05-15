@@ -1,41 +1,111 @@
 .section {
-    display: flex;
-    text-align: start;
-    justify-content: start;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
     align-items: center;
+    width: 100%;
     margin: 0;
     padding: 0;
-    height: 400px;
 }
 
 .section1 {
     height: 100vh;
+    background-image: url(../img/filo4.1png.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 25px;
+}
+
+.nuestroEquipo {
+    text-align: center;
 }
 
 .title {
     font-family: $font-family-sans-serif;
-    margin-left: 20px;
-    font-size: 40px;
+    font-size: 60px;
     color: $secundary-color;
 }
-
-.title::after {
-    content: "";
-    position: relative;
-    @include carrousel (3px, 70px);
-    margin-left: 4px;
-    left: 0;
-    top: 0.05em;
-    background: $secundary-color;
-    display: block;
-}
-
 
 .p1 {
-    margin-left: 20px;
-    font-size: 20px;
+    font-size: 25px;
     color: $secundary-color;
 }
+
+.cardFilosofia {
+    width: 190px;
+    height: 254px;
+    background: rgb(255, 242, 0);
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.5s;
+   }
+   
+   .cardFilosofia:hover {
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.623);
+    background-color: rgb(255, 242, 0);
+   }
+   
+   .cardFilosofia .blob {
+    height: 10px;
+    width: 75%;
+    border-radius: 0 0 30px 30px;
+    margin: 0 auto;
+    background-color: white;
+    visibility: visible;
+    transition: all 0.3s;
+   }
+   
+   .cardFilosofia:hover .blob {
+    height: 0;
+   }
+   
+   .cardFilosofia .imgg {
+    display: flex;
+    margin: 20px auto 10px auto;
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+   }
+   
+   .cardFilosofia:hover .imgg {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px 0 0;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    background-size: cover;
+    z-index: 99999;
+   }
+   
+   .cardFilosofia h3 {
+    color: black;
+    padding: 35px 10px;
+    font-size: 35px;
+    transition: all 0.1s;
+    z-index: -99;
+    line-height: 17px;
+   }
+
+   
+   .cardFilosofia span {
+    font-size: 15px;
+   }
+
+   .filosofiaCartas {
+       padding-top: 25px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .cardFilosofia {
+       margin: 40px;
+   }
 
 
 .section .title p {
