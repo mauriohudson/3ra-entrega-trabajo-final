@@ -30,6 +30,15 @@
     transform: scale(1) rotate(360deg);
 }
 
+.grid-picture1 {
+    filter: grayscale(100%);
+}
+
+.grid-picture1:hover {
+    filter: grayscale(0%);
+}
+
+
 .gallery_container {
     display: grid;
     padding: 1% 0;

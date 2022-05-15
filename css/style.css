@@ -169,42 +169,111 @@ header .navbar {
 }
 
 .section {
-  display: flex;
-  text-align: start;
-  justify-content: start;
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
   align-items: center;
+  width: 100%;
   margin: 0;
   padding: 0;
-  height: 400px;
 }
 
 .section1 {
   height: 100vh;
+  background-image: url(../img/filo4.1png.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 25px;
+}
+
+.nuestroEquipo {
+  text-align: center;
 }
 
 .title {
   font-family: "Old Standard TT", serif;
-  margin-left: 20px;
-  font-size: 40px;
+  font-size: 60px;
   color: #fff;
-}
-
-.title::after {
-  content: "";
-  position: relative;
-  height: 3px;
-  width: 70px;
-  margin-left: 4px;
-  left: 0;
-  top: 0.05em;
-  background: #fff;
-  display: block;
 }
 
 .p1 {
-  margin-left: 20px;
-  font-size: 20px;
+  font-size: 25px;
   color: #fff;
+}
+
+.cardFilosofia {
+  width: 190px;
+  height: 254px;
+  background: rgb(255, 242, 0);
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.cardFilosofia:hover {
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.623);
+  background-color: rgb(255, 242, 0);
+}
+
+.cardFilosofia .blob {
+  height: 10px;
+  width: 75%;
+  border-radius: 0 0 30px 30px;
+  margin: 0 auto;
+  background-color: white;
+  visibility: visible;
+  transition: all 0.3s;
+}
+
+.cardFilosofia:hover .blob {
+  height: 0;
+}
+
+.cardFilosofia .imgg {
+  display: flex;
+  margin: 20px auto 10px auto;
+  width: 90px;
+  height: 90px;
+  background-color: white;
+  border-radius: 50%;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.cardFilosofia:hover .imgg {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px 0 0;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  background-size: cover;
+  z-index: 99999;
+}
+
+.cardFilosofia h3 {
+  color: black;
+  padding: 35px 10px;
+  font-size: 35px;
+  transition: all 0.1s;
+  z-index: -99;
+  line-height: 17px;
+}
+
+.cardFilosofia span {
+  font-size: 15px;
+}
+
+.filosofiaCartas {
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardFilosofia {
+  margin: 40px;
 }
 
 .section .title p {
@@ -340,6 +409,80 @@ header .navbar {
 
 .sacarDecoracion:hover {
   color: black;
+}
+
+.card {
+  width: 190px;
+  padding: 0.8em;
+  background: black;
+  color: white;
+  position: relative;
+  overflow: visible;
+  box-shadow: 0 1px 3px rgb(255, 255, 255), 0 1px 2px rgba(255, 225, 0, 0.24);
+}
+
+.card-img {
+  background-color: rgb(255, 242, 0);
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+  transition: 0.3s ease;
+}
+
+svg {
+  width: 20px;
+  height: 20px;
+}
+
+.card-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.text-title {
+  padding-bottom: 25%;
+  height: 5vh;
+  font-weight: 900;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.text-body {
+  height: 18vh;
+  color: white !important;
+  font-size: 0.9em;
+  padding-bottom: 10px;
+}
+
+.card-button {
+  background-color: white;
+  border: 1px solid white;
+  display: flex;
+  padding: 0.3em;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+}
+
+.card-img:hover {
+  transform: translateY(-25%);
+  box-shadow: rgb(255, 255, 255) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+}
+
+.card-button:hover {
+  border: 1px solid rgb(255, 242, 0);
+  background-color: rgb(255, 242, 0);
+}
+
+.cartasMenu {
+  margin: 15px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
 }
 
 .formulario__container {
@@ -508,6 +651,14 @@ header .navbar {
   transform: scale(1) rotate(360deg);
 }
 
+.grid-picture1 {
+  filter: grayscale(100%);
+}
+
+.grid-picture1:hover {
+  filter: grayscale(0%);
+}
+
 .gallery_container {
   display: grid;
   padding: 1% 0;
@@ -604,6 +755,28 @@ header .navbar {
 
   .container__contactos {
     background-size: contain;
+  }
+
+  .section {
+    height: 225vh;
+  }
+
+  .title {
+    font-size: 30px;
+    margin: 0;
+  }
+
+  .p1 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .filosofiaCartas {
+    padding: 0;
+  }
+
+  .text-body {
+    height: auto;
   }
 
   .redes {
