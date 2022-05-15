@@ -83,14 +83,17 @@
    }
    
    .cardFilosofia h3 {
+       line-height: 25px;
+    padding: 5px;
     color: black;
-    padding: 35px 10px;
     font-size: 35px;
     transition: all 0.1s;
     z-index: -99;
-    line-height: 17px;
    }
 
+   .prof {
+       padding-bottom: 1rem;
+   }
    
    .cardFilosofia span {
     font-size: 15px;
