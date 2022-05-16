@@ -12,7 +12,7 @@
 }
 
 .row {
-   @extend .centrar;
+  @extend .centrar;
 }
 
 
@@ -35,22 +35,27 @@
   0% {
     text-shadow: map-get($map: $colores-shadow, $key: primera-capa1);
   }
+
   100% {
     text-shadow: map-get($map: $colores-shadow, $key: primera-capa2);
   }
 }
+
 @keyframes second_color {
   0% {
     text-shadow: map-get($map: $colores-shadow, $key: segunda-capa1);
   }
+
   100% {
     text-shadow: map-get($map: $colores-shadow, $key: segunda-capa2);
   }
 }
+
 @keyframes third_color {
   0% {
     text-shadow: map-get($map: $colores-shadow, $key: tercera-capa1);
   }
+
   100% {
     text-shadow: map-get($map: $colores-shadow, $key: tercera-capa2);
   }
