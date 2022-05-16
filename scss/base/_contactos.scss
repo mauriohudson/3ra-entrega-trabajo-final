@@ -8,7 +8,7 @@
 }
 
 .px-1 {
-    background-color: rgb(255, 242, 0);
+    background-color: $primary-color;
     color: black;
 }
 
@@ -21,7 +21,7 @@
 .botonContactos {
  font-family: inherit;
  font-size: 20px;
- background: yellow;
+ background: $primary-color;
  color: black;
  padding: 0.7em 1em;
  padding-left: 0.9em;

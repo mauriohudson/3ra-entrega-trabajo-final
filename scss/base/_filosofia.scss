@@ -34,7 +34,7 @@
 .cardFilosofia {
     width: 190px;
     height: 254px;
-    background: rgb(255, 242, 0);
+    background: $primary-color;
     border-radius: 10px;
     text-align: center;
     transition: all 0.5s;
@@ -42,7 +42,7 @@
    
    .cardFilosofia:hover {
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.623);
-    background-color: rgb(255, 242, 0);
+    background-color: $primary-color;
    }
    
    .cardFilosofia .blob {
@@ -50,7 +50,7 @@
     width: 75%;
     border-radius: 0 0 30px 30px;
     margin: 0 auto;
-    background-color: white;
+    background-color: $info;
     visibility: visible;
     transition: all 0.3s;
    }
@@ -83,7 +83,7 @@
    }
    
    .cardFilosofia h3 {
-       line-height: 25px;
+    line-height: 25px;
     padding: 5px;
     color: black;
     font-size: 35px;
