@@ -1,12 +1,13 @@
-
 .def1 {
   background-image: url(../img/def11.png);
-  background-size: cover;;
+  background-size: cover;
+  ;
 }
 
 .def2 {
   background-image: url(../img/def22.png);
-  background-size: cover;;
+  background-size: cover;
+  ;
 }
 
 .def3 {
@@ -51,11 +52,10 @@
     transform: translateY(-50%);
     border-radius: 50%;
     transition: all 0.3s ease;
-  }
 
-  .carousel-control-next:hover,
-  .carousel-control-prev:hover {
-    box-shadow: 0 0 10px #ffffff;
+    &:hover {
+      box-shadow: 0 0 10px #ffffff;
+    }
   }
 
   .carousel-control-next img,
@@ -82,16 +82,16 @@
     background-position: center;
     position: relative;
     z-index: 1;
-  }
 
-  .carousel-inner .carousel-item::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    @include carrousel (100%, 100%);
-    background-color: rgba(0, 0, 0, 0.2);
-    z-index: -1;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      @include carrousel (100%, 100%);
+      background-color: rgba(0, 0, 0, 0.2);
+      z-index: -1;
+    }
   }
 
   .carousel-inner .carousel-item h1 {
@@ -123,21 +123,25 @@
       opacity: 0;
       transform: translateX(-500px);
     }
+
     100% {
       opacity: 1;
       transform: translateX(0px);
     }
   }
+
   @keyframes desvanecerseDerecha {
     0% {
       opacity: 0;
       transform: translateX(500px);
     }
+
     100% {
       opacity: 1;
       transform: translateX(0px);
     }
   }
+
   .carousel-inner .carousel-item .container__text {
     position: absolute;
     left: 50%;

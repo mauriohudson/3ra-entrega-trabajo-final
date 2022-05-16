@@ -1,18 +1,18 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  body {
-    background-color:  #010205;
-    overflow-x: hidden;
-  }
-  
-  header {
-    opacity: 0.7;
-  }
+body {
+  background-color: #010205;
+  overflow-x: hidden;
+}
 
-  .rowover{
-    --bs-gutter-x: 0;
-  }
+header {
+  opacity: 0.7;
+}
+
+.rowover {
+  --bs-gutter-x: 0;
+}
