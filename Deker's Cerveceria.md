@@ -3,7 +3,7 @@
 ### Proyecto para [`CoderHouse`](https://www.coderhouse.com.pe/)
 ###### Curso: Desarrollo Web "dia de entrega 16/05/22"
 
-Este proyecto es mi primera experiencia con algo completo como lo que hice, a pezar de ser una pagina completamente estatica, creo que aprendi bastante en el proceso.
+Este proyecto es mi primera experiencia con algo completo como lo que hice, a pesar de ser una pagina completamente estatica, creo que aprendi bastante en el proceso.
 cuenta con 5 diferentes paginas, cada una muy diferente a las demas y con un desafio distinto.
 
 **Tecnologias Utilizadas:** 
