@@ -215,13 +215,13 @@ header .navbar {
 
 .picture-2 {
   grid-area: picture-2;
-  background-image: url(../img/pp1.png);
+  background-image: url(../img/pp1.jpg);
   background-repeat: no-repeat;
 }
 
 .picture-3 {
   grid-area: picture-3;
-  background-image: url(../img/pp2.png);
+  background-image: url(../img/pp2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -726,7 +726,7 @@ svg {
 
 .picture-11 {
   grid-area: picture-11;
-  background-image: url(../galeria/cer1.png);
+  background-image: url(../galeria/cer1.jpg);
 }
 
 .picture-21 {
@@ -743,7 +743,7 @@ svg {
 
 .picture-41 {
   grid-area: picture-41;
-  background-image: url(../galeria/cer2.png);
+  background-image: url(../galeria/cer2.jpg);
 }
 
 .picture-51 {
@@ -758,7 +758,7 @@ svg {
 
 .picture-71 {
   grid-area: picture-71;
-  background-image: url(../galeria/cer3.png);
+  background-image: url(../galeria/cer3.jpg);
 }
 
 .picture-81 {
@@ -773,7 +773,7 @@ svg {
 
 .picture-101 {
   grid-area: picture-101;
-  background-image: url(../galeria/cer4.png);
+  background-image: url(../galeria/cer4.jpg);
 }
 
 .picture-111 {
@@ -788,7 +788,7 @@ svg {
 
 .picture-22 {
   grid-area: picture-22;
-  background-image: url(../galeria/cer5.png);
+  background-image: url(../galeria/cer5.jpg);
 }
 
 .picture-32 {
@@ -803,7 +803,7 @@ svg {
 
 .picture-52 {
   grid-area: picture-52;
-  background-image: url(../galeria/cer6.png);
+  background-image: url(../galeria/cer6.jpg);
 }
 
 .picture-62 {
@@ -818,7 +818,7 @@ svg {
 
 .picture-82 {
   grid-area: picture-82;
-  background-image: url(../galeria/cer7.png);
+  background-image: url(../galeria/cer7.jpg);
 }
 
 .picture-92 {
@@ -833,7 +833,7 @@ svg {
 
 .picture-112 {
   grid-area: picture-112;
-  background-image: url(../galeria/cer8.png);
+  background-image: url(../galeria/cer8.jpg);
 }
 
 .picture-13 {
@@ -848,7 +848,7 @@ svg {
 
 .picture-33 {
   grid-area: picture-33;
-  background-image: url(../galeria/cer9.png);
+  background-image: url(../galeria/cer9.jpg);
 }
 
 .picture-43 {
@@ -863,7 +863,7 @@ svg {
 
 .picture-63 {
   grid-area: picture-63;
-  background-image: url(../galeria/cer10.png);
+  background-image: url(../galeria/cer10.jpg);
 }
 
 .picture-73 {
