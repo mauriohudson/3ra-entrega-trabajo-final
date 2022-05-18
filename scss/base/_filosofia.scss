@@ -5,15 +5,19 @@
     align-items: center;
     width: 100%;
     margin: 0;
-    padding: 2rem;
+    padding: 0;
 }
 
 .section1 {
-    height: 100vh;
+    height: 110vh;
     background-image: url(../img/filo4.1png.png);
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 25px;
+}
+
+.sect {
+    padding: 2rem;
 }
 
 .nuestroEquipo {
