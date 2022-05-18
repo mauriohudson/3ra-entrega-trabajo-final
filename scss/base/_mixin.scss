@@ -35,6 +35,47 @@
     }
 
     .gallery_container {
+      display: grid;
+      padding: 1% 0;
+      max-width: 100%;
+      @include carrousel (1000vh, 100%);
+      gap: 5px;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(30, 1fr);
+      grid-template-areas:
+          "picture-11" 
+          "picture-21" 
+          "picture-31" 
+          "picture-41" 
+          "picture-51"
+          "picture-61" 
+          "picture-71" 
+          "picture-81" 
+          "picture-91" 
+          "picture-101"
+          "picture-111" 
+          "picture-12" 
+          "picture-22" 
+          "picture-32" 
+          "picture-42"
+          "picture-52" 
+          "picture-62" 
+          "picture-72" 
+          "picture-82" 
+          "picture-92"
+          "picture-102" 
+          "picture-112" 
+          "picture-13" 
+          "picture-23" 
+          "picture-33"
+          "picture-43" 
+          "picture-53" 
+          "picture-63" 
+          "picture-73" 
+          "picture-83"
+          ;
+  }
+    .gallery_container1 {
       height: 300vh;
       display: grid;
       grid-template-columns: 1fr;
@@ -108,6 +149,47 @@
     }
 
     .gallery_container {
+      display: grid;
+      padding: 1% 0;
+      max-width: 100%;
+      @include carrousel (1500vh, 100%);
+      gap: 5px;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(30, 1fr);
+      grid-template-areas:
+          "picture-11" 
+          "picture-21" 
+          "picture-31" 
+          "picture-41" 
+          "picture-51"
+          "picture-61" 
+          "picture-71" 
+          "picture-81" 
+          "picture-91" 
+          "picture-101"
+          "picture-111" 
+          "picture-12" 
+          "picture-22" 
+          "picture-32" 
+          "picture-42"
+          "picture-52" 
+          "picture-62" 
+          "picture-72" 
+          "picture-82" 
+          "picture-92"
+          "picture-102" 
+          "picture-112" 
+          "picture-13" 
+          "picture-23" 
+          "picture-33"
+          "picture-43" 
+          "picture-53" 
+          "picture-63" 
+          "picture-73" 
+          "picture-83"
+          ;
+  }
+    .gallery_container1 {
       height: 300vh;
       display: grid;
       grid-template-columns: 1fr;
@@ -186,6 +268,33 @@
     }
 
     .gallery_container {
+      display: grid;
+      padding: 1% 0;
+      max-width: 100%;
+      @include carrousel (500vh, 100%);
+      gap: 5px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(15, 1fr);
+      grid-template-areas:
+          "picture-11 picture-21" 
+          "picture-31 picture-41" 
+          "picture-51 picture-61"
+          "picture-71 picture-81" 
+          "picture-91 picture-101" 
+          "picture-111 picture-12" 
+          "picture-22 picture-32" 
+          "picture-42 picture-52"
+          "picture-62 picture-72" 
+          "picture-82 picture-92" 
+          "picture-102 picture-112" 
+          "picture-13 picture-23" 
+          "picture-33 picture-43"
+          "picture-53 picture-63" 
+          "picture-73 picture-83" 
+          ;
+  } 
+
+    .gallery_container1 {
       height: 300vh;
       display: grid;
       grid-template-columns: 1fr;

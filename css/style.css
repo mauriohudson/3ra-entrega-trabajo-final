@@ -22,7 +22,7 @@ header {
   text-align: center;
 }
 
-.background, .picture-9, .picture-8, .picture-7, .picture-6, .picture-5, .picture-4, .picture-3, .picture-2, .picture-1 {
+.background, .picture-83, .picture-73, .picture-63, .picture-53, .picture-43, .picture-33, .picture-23, .picture-13, .picture-112, .picture-102, .picture-92, .picture-82, .picture-72, .picture-62, .picture-52, .picture-42, .picture-32, .picture-22, .picture-12, .picture-111, .picture-101, .picture-91, .picture-81, .picture-71, .picture-61, .picture-51, .picture-41, .picture-31, .picture-21, .picture-11, .picture-9, .picture-8, .picture-7, .picture-6, .picture-5, .picture-4, .picture-3, .picture-2, .picture-1 {
   background-size: cover;
   background-position: center;
 }
@@ -166,6 +166,96 @@ header .navbar {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.grid-picture {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.grid-picture::before {
+  content: "Deker's Bar";
+  font-family: "Old Standard TT", serif;
+  font-size: 1.5rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #000000;
+  opacity: 0.7;
+  transform: scale(0);
+  transition: transform 0.4s;
+}
+
+.grid-picture:hover::before {
+  transform: scale(1) rotate(360deg);
+}
+
+.gallery_container1 {
+  display: grid;
+  padding: 1% 0;
+  max-width: 100%;
+  height: 150vh;
+  width: 100%;
+  gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "picture-1 picture-2 picture-2" "picture-1 picture-3 picture-3" "picture-4 picture-5 picture-5" "picture-8 picture-6 picture-6" "picture-8 picture-7 picture-9";
+}
+
+.picture-1 {
+  grid-area: picture-1;
+  background-image: url(../img/1.jpg);
+}
+
+.picture-2 {
+  grid-area: picture-2;
+  background-image: url(../img/pp1.png);
+  background-repeat: no-repeat;
+}
+
+.picture-3 {
+  grid-area: picture-3;
+  background-image: url(../img/pp2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.picture-4 {
+  grid-area: picture-4;
+  background-image: url(../img/9.jpg);
+}
+
+.picture-5 {
+  grid-area: picture-5;
+  background-image: url(../img/pp3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.picture-6 {
+  grid-area: picture-6;
+  background-image: url(../img/5.jpg);
+}
+
+.picture-7 {
+  grid-area: picture-7;
+  background-image: url(../img/6.jpg);
+}
+
+.picture-8 {
+  grid-area: picture-8;
+  background-image: url(../img/7.jpg);
+}
+
+.picture-9 {
+  grid-area: picture-9;
+  background-image: url(../img/8.jpg);
 }
 
 .section {
@@ -614,37 +704,6 @@ svg {
     text-shadow: 0 0 10px #25d366;
   }
 }
-.grid-picture {
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-}
-.grid-picture::before {
-  content: "Deker's Bar";
-  font-family: "Old Standard TT", serif;
-  font-size: 1.5rem;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: #000000;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.48'%3E%3Cpolygon fill='%23220000' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23440000' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23660000' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23880000' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A00' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
-  background-attachment: fixed;
-  background-size: cover;
-  opacity: 0.7;
-  transform: scale(0);
-  transition: transform 0.4s;
-}
-
-.grid-picture:hover::before {
-  transform: scale(1) rotate(360deg);
-}
-
 .grid-picture1 {
   filter: grayscale(100%);
 }
@@ -660,56 +719,161 @@ svg {
   height: 150vh;
   width: 100%;
   gap: 5px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-template-areas: "picture-1 picture-2 picture-2" "picture-1 picture-3 picture-3" "picture-4 picture-5 picture-5" "picture-8 picture-6 picture-6" "picture-8 picture-7 picture-9";
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas: "picture-11 picture-21 picture-31 picture-41 picture-51" "picture-61 picture-71 picture-81 picture-91 picture-101" "picture-111 picture-12 picture-22 picture-32 picture-42" "picture-52 picture-62 picture-72 picture-82 picture-92" "picture-102 picture-112 picture-13 picture-23 picture-33" "picture-43 picture-53 picture-63 picture-73 picture-83";
 }
 
-.picture-1 {
-  grid-area: picture-1;
-  background-image: url(../galeria/1.jpg);
+.picture-11 {
+  grid-area: picture-11;
+  background-image: url(../galeria/cer1.png);
 }
 
-.picture-2 {
-  grid-area: picture-2;
-  background-image: url(../galeria/22.jpg);
+.picture-21 {
+  grid-area: picture-21;
+  background-image: url(../galeria/com11.jpg);
   background-repeat: no-repeat;
 }
 
-.picture-3 {
-  grid-area: picture-3;
-  background-image: url(../galeria/33.jpg);
+.picture-31 {
+  grid-area: picture-31;
+  background-image: url(../galeria/dri11.jpg);
   background-repeat: no-repeat;
 }
 
-.picture-4 {
-  grid-area: picture-4;
-  background-image: url(../galeria/pexels-magda-ehlers-1189261.jpg);
+.picture-41 {
+  grid-area: picture-41;
+  background-image: url(../galeria/cer2.png);
 }
 
-.picture-5 {
-  grid-area: picture-5;
-  background-image: url(../galeria/pexels-picography-4784.jpg);
+.picture-51 {
+  grid-area: picture-51;
+  background-image: url(../galeria/com22.jpg);
 }
 
-.picture-6 {
-  grid-area: picture-6;
-  background-image: url(../galeria/6.jpg);
+.picture-61 {
+  grid-area: picture-61;
+  background-image: url(../galeria/dri22.jpg);
 }
 
-.picture-7 {
-  grid-area: picture-7;
-  background-image: url(../galeria/7.jpg);
+.picture-71 {
+  grid-area: picture-71;
+  background-image: url(../galeria/cer3.png);
 }
 
-.picture-8 {
-  grid-area: picture-8;
-  background-image: url(../galeria/8.jpg);
+.picture-81 {
+  grid-area: picture-81;
+  background-image: url(../galeria/com33.jpg);
 }
 
-.picture-9 {
-  grid-area: picture-9;
-  background-image: url(../galeria/9.jpg);
+.picture-91 {
+  grid-area: picture-91;
+  background-image: url(../galeria/dd11.jpg);
+}
+
+.picture-101 {
+  grid-area: picture-101;
+  background-image: url(../galeria/cer4.png);
+}
+
+.picture-111 {
+  grid-area: picture-111;
+  background-image: url(../galeria/com44.jpg);
+}
+
+.picture-12 {
+  grid-area: picture-12;
+  background-image: url(../galeria/dri33.jpg);
+}
+
+.picture-22 {
+  grid-area: picture-22;
+  background-image: url(../galeria/cer5.png);
+}
+
+.picture-32 {
+  grid-area: picture-32;
+  background-image: url(../galeria/com55.jpg);
+}
+
+.picture-42 {
+  grid-area: picture-42;
+  background-image: url(../galeria/dri44.jpg);
+}
+
+.picture-52 {
+  grid-area: picture-52;
+  background-image: url(../galeria/cer6.png);
+}
+
+.picture-62 {
+  grid-area: picture-62;
+  background-image: url(../galeria/com66.jpg);
+}
+
+.picture-72 {
+  grid-area: picture-72;
+  background-image: url(../galeria/dri55.jpg);
+}
+
+.picture-82 {
+  grid-area: picture-82;
+  background-image: url(../galeria/cer7.png);
+}
+
+.picture-92 {
+  grid-area: picture-92;
+  background-image: url(../galeria/com77.jpg);
+}
+
+.picture-102 {
+  grid-area: picture-102;
+  background-image: url(../galeria/dri66.jpg);
+}
+
+.picture-112 {
+  grid-area: picture-112;
+  background-image: url(../galeria/cer8.png);
+}
+
+.picture-13 {
+  grid-area: picture-13;
+  background-image: url(../galeria/com88.jpg);
+}
+
+.picture-23 {
+  grid-area: picture-23;
+  background-image: url(../galeria/dri77.jpg);
+}
+
+.picture-33 {
+  grid-area: picture-33;
+  background-image: url(../galeria/cer9.png);
+}
+
+.picture-43 {
+  grid-area: picture-43;
+  background-image: url(../galeria/com99.jpg);
+}
+
+.picture-53 {
+  grid-area: picture-53;
+  background-image: url(../galeria/dri88.jpg);
+}
+
+.picture-63 {
+  grid-area: picture-63;
+  background-image: url(../galeria/cer10.png);
+}
+
+.picture-73 {
+  grid-area: picture-73;
+  background-image: url(../galeria/com100.jpg);
+}
+
+.picture-83 {
+  grid-area: picture-83;
+  background-image: url(../galeria/dri99.jpg);
 }
 
 @media only screen and (min-width: 320px) and (max-width: 540px) {
@@ -736,6 +900,18 @@ svg {
   }
 
   .gallery_container {
+    display: grid;
+    padding: 1% 0;
+    max-width: 100%;
+    height: 1000vh;
+    width: 100%;
+    gap: 5px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(30, 1fr);
+    grid-template-areas: "picture-11" "picture-21" "picture-31" "picture-41" "picture-51" "picture-61" "picture-71" "picture-81" "picture-91" "picture-101" "picture-111" "picture-12" "picture-22" "picture-32" "picture-42" "picture-52" "picture-62" "picture-72" "picture-82" "picture-92" "picture-102" "picture-112" "picture-13" "picture-23" "picture-33" "picture-43" "picture-53" "picture-63" "picture-73" "picture-83";
+  }
+
+  .gallery_container1 {
     height: 300vh;
     display: grid;
     grid-template-columns: 1fr;
@@ -806,6 +982,18 @@ svg {
   }
 
   .gallery_container {
+    display: grid;
+    padding: 1% 0;
+    max-width: 100%;
+    height: 1500vh;
+    width: 100%;
+    gap: 5px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(30, 1fr);
+    grid-template-areas: "picture-11" "picture-21" "picture-31" "picture-41" "picture-51" "picture-61" "picture-71" "picture-81" "picture-91" "picture-101" "picture-111" "picture-12" "picture-22" "picture-32" "picture-42" "picture-52" "picture-62" "picture-72" "picture-82" "picture-92" "picture-102" "picture-112" "picture-13" "picture-23" "picture-33" "picture-43" "picture-53" "picture-63" "picture-73" "picture-83";
+  }
+
+  .gallery_container1 {
     height: 300vh;
     display: grid;
     grid-template-columns: 1fr;
@@ -881,6 +1069,18 @@ svg {
   }
 
   .gallery_container {
+    display: grid;
+    padding: 1% 0;
+    max-width: 100%;
+    height: 500vh;
+    width: 100%;
+    gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    grid-template-areas: "picture-11 picture-21" "picture-31 picture-41" "picture-51 picture-61" "picture-71 picture-81" "picture-91 picture-101" "picture-111 picture-12" "picture-22 picture-32" "picture-42 picture-52" "picture-62 picture-72" "picture-82 picture-92" "picture-102 picture-112" "picture-13 picture-23" "picture-33 picture-43" "picture-53 picture-63" "picture-73 picture-83";
+  }
+
+  .gallery_container1 {
     height: 300vh;
     display: grid;
     grid-template-columns: 1fr;
